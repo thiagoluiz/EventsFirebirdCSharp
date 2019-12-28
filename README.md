@@ -37,6 +37,8 @@ No Exemplo acima, foi criado uma procedure onde é percorrido todos os itens dat
 Obs: Coloquei o evento dentro de uma transação autônoma, sem essa clausula todas as notificações só seriam disparadas após o commit.
 
 ## Código C#
+Toda Vez que for disparado um evento "ATUALIZAPROGRESSO", irá dar um inc(1) na barra de progresso e caso seja disparado o evento "PROCESSOCONCLUIDO" irá mostrar num label a mensagem "Processo Concluído"
+
 ```c#
 private void Form1_Load(object sender, EventArgs e)
         {
