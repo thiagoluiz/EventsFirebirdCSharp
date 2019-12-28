@@ -1,16 +1,13 @@
-# ServicoAgrupaPDF
-Serviço SelfHost usando Topshelf que le uma pasta com vários PDFs e Agrupa todos em um arquivo único.  
-
-# AutocompletePlacesWithPhotonForIonic3
-Autocomplete de locais semelhante ao do Google Maps(Places) para ionic 3 usando Photon (Gratuito)
+# Eventos do Firebird com C#
+Exemplo de como monitorar Eventos do Firebird(POST_EVENT) utilizando C#
 
 ## Proposta
-Criei este componente com a finalidade de ajudar empresas e profissionais autonomos ha não dependerem mais da Places API do Google Maps.
-Depois da mudança da política de monetização da Google o custo para usar essa API ficou muito alto, estava pagando em média 7 mil reais, com este novo componente o custo foi zerado.
+Criei esse exemplo utilizando o POST_EVENT(Nativo do Firebird) e mostrarei como criar um listener no C# para ficar escutando esses eventos.
 
-OBS: Quero deixar claro que a API da Google tem muito mais qualidade, muito mais estabelecimentos, mas para quem tiver desesperado essa é uma ótima alternativa.
+OBS: Podemos utilizar os Events para diversas finalidades, uma delas é por exemplo ao rodarmos uma procedure com consultas a operações pesadas e após concluir cada processo disparar um evento e mostrar no log.
 
-![](http://photon.komoot.de/static/img/photon_logo.png)
+Abaixo temos no site do próprio firebird uma documentação sobre o evento:
+https://firebirdsql.org/file/documentation/reference_manuals/driver_manuals/odbc/html/fbodbc205-events.html
 
 
 
