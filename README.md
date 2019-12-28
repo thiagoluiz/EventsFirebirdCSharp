@@ -37,7 +37,33 @@ No Exemplo acima, foi criado uma procedure onde é percorrido todos os itens dat
 Obs: Coloquei o evento dentro de uma transação autônoma, sem essa clausula todas as notificações só seriam disparadas após o commit.
 
 ## Código C#
-```html
+```c#
+private void Form1_Load(object sender, EventArgs e)
+        {
+            Listener.events.RemoteEventError += (esender, ex) => lblStatus.Text = $"ERRO: {ex.Error}";
+            Listener.events.RemoteEventCounts += (esender, ex) =>
+            {
+                if (ex.Name == "ATUALIZAPROGRESSO")
+                {
+                    progressBar.Invoke((MethodInvoker)delegate
+                    {
+                        progressBar.Increment(1);
+                    });
+                    
+                };
+
+                if (ex.Name == "PROCESSOCONCLUIDO")
+                {
+                    lblStatus.Invoke((MethodInvoker)delegate
+                    {
+                        lblStatus.Text = "Processo Concluído";
+                        lblStatus.Visible = true;
+                    });
+
+                };
+                ;
+            };
+        } 
 
 ```
 
