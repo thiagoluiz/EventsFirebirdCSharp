@@ -26,10 +26,13 @@ BEGIN
     IN AUTONOMOUS TRANSACTION DO
       POST_EVENT 'ATUALIZAPROGRESSO';
 
-
-  END
+  END  
+  
+  IN AUTONOMOUS TRANSACTION DO
+    POST_EVENT 'PROCESSOCONCLUIDO';  
 END
 ```
+No Exemplo acima, foi criado uma procedure onde é percorrido todos os itens data tabela TB_SAIDA a fim de atualizar o campo OBS para "OK" e cada vez que o item é percorrido irá disparar um evento "ATUALIZAPROGRESSO" que será utilizado pela aplicação C# para atualizar o progresso. No final, irá disparar mais um evento para sabermos que o processo finalizou
 
 ## Código autocomplete-photon.html
 ```html
