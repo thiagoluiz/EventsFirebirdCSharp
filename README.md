@@ -11,7 +11,7 @@ https://firebirdsql.org/file/documentation/reference_manuals/driver_manuals/odbc
 
 # [Events com C#](#)
 
-## Código Criando Eventos no Firebird
+## Criando Eventos no Firebird
 ```sql
 CREATE OR ALTER PROCEDURE SP_DISPARA_EVENTOS
 AS
@@ -32,7 +32,9 @@ BEGIN
     POST_EVENT 'PROCESSOCONCLUIDO';  
 END
 ```
-No Exemplo acima, foi criado uma procedure onde é percorrido todos os itens data tabela TB_SAIDA a fim de atualizar o campo OBS para "OK" e cada vez que o item é percorrido irá disparar um evento "ATUALIZAPROGRESSO" que será utilizado pela aplicação C# para atualizar o progresso. No final, irá disparar mais um evento para sabermos que o processo finalizou
+No Exemplo acima, foi criado uma procedure onde é percorrido todos os itens data tabela TB_SAIDA a fim de atualizar o campo OBS para "OK" e cada vez que o item é percorrido irá disparar um evento "ATUALIZAPROGRESSO" que será utilizado pela aplicação C# para atualizar o progresso. No final, irá disparar mais um evento para sabermos que o processo finalizou.
+
+Obs: Coloquei o evento dentro de uma transação autônoma, sem essa clausula todas as notificações só seriam disparadas após o commit.
 
 ## Código C#
 ```html
