@@ -2,9 +2,7 @@
 Exemplo de como monitorar Eventos do Firebird(POST_EVENT) utilizando C#
 
 ## Proposta
-Criei esse exemplo utilizando o POST_EVENT(Nativo do Firebird) e mostrarei como criar um listener no C# para ficar escutando esses eventos.
-
-OBS: Podemos utilizar os Events para diversas finalidades, uma delas é por exemplo ao rodarmos uma procedure com consultas a operações pesadas e após concluir cada processo disparar um evento e mostrar no log.
+Criei esse exemplo utilizando o POST_EVENT(Nativo do Firebird) e mostrarei como criar um listener no C# para ficar escutando esses eventos. Podemos utilizar os Events para diversas finalidades, uma delas é por exemplo ao rodarmos uma procedure com consultas a operações pesadas e após concluir cada processo disparar um evento e mostrar no log.
 
 Abaixo temos no site do próprio firebird uma documentação sobre o evento:
 https://firebirdsql.org/file/documentation/reference_manuals/driver_manuals/odbc/html/fbodbc205-events.html
