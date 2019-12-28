@@ -1,0 +1,11 @@
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\bin\Debug\ListenerWinForms.exe.config
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\bin\Debug\ListenerWinForms.exe
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\bin\Debug\ListenerWinForms.pdb
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.Form1.resources
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.Properties.Resources.resources
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.csproj.GenerateResource.cache
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.csproj.CopyComplete
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.exe
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.pdb
+C:\Users\thiag\source\repos\ListenerFirebird\ListenerWinForms\obj\Debug\ListenerWinForms.csprojAssemblyReference.cache
