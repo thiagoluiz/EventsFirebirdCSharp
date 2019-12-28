@@ -70,5 +70,4 @@ private void Form1_Load(object sender, EventArgs e)
 ```
 
 
-## Veja um exemplo do componente funcionando
-![](https://github.com/pauloanalista/AutocompletePlacesWithPhotonForIonic3/blob/master/PhotonComponentIonic3.gif?raw=true)
+
