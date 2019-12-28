@@ -12,12 +12,27 @@ https://firebirdsql.org/file/documentation/reference_manuals/driver_manuals/odbc
 # [Events com C#]
 
 ## Criando Eventos no Firebird
-```sh
-ionic generate component AutocompletePhoton
+```sql
+CREATE OR ALTER PROCEDURE SP_DISPARA_EVENTOS
+AS
+DECLARE VARIABLE VID_SAIDA INTEGER = 0;
+BEGIN
+  FOR SELECT SD1.ID_SAIDA FROM TB_SAIDA_ITEM SD1
+  INTO: VID_SAIDA
+  DO
+  BEGIN
+    UPDATE TB_SAIDA_ITEM SI SET SI.OBS = 'OK' WHERE SI.ID_SAIDA = :VID_SAIDA;
+
+    IN AUTONOMOUS TRANSACTION DO
+      POST_EVENT 'ATUALIZAPROGRESSO';
+
+
+  END
+END
 ```
 
 ## Código autocomplete-photon.html
-```sql
+```html
 <ion-item>
   <ion-label stacked>
     <span class="titulo_label">{{label}}</span>
